@@ -24,7 +24,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar title="TextUtils" mode={mode} togglemode={togglemode} />
+      <Navbar title="TextMorph" mode={mode} togglemode={togglemode} />
       <div className="container my-3">
         <Routes>
           <Route path="/" element={<Textarea heading="Enter the text to analyze" />} />
