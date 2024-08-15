@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Textarea from "./components/Textarea";
-import About from "./components/About";
+// import About from "./components/About";
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -23,16 +23,25 @@ function App() {
   };
 
   return (
-    <Router>
+    // <Router>
+    //   <Navbar title="TextMorph" mode={mode} togglemode={togglemode} />
+    //   <div className="container my-3">
+    //     <Routes>
+    //       <Route path="/" element={<Textarea heading="Enter the text to analyze" />} />
+    //       <Route path="/Textarea" element={<Textarea heading="Enter the text to analyze" />} />
+    //       <Route path="/About" element={<About/>} />
+    //     </Routes>
+    //   </div>
+    // </Router>
+
+
+      <>
       <Navbar title="TextMorph" mode={mode} togglemode={togglemode} />
       <div className="container my-3">
-        <Routes>
-          <Route path="/" element={<Textarea heading="Enter the text to analyze" />} />
-          <Route path="/Textarea" element={<Textarea heading="Enter the text to analyze" />} />
-          <Route path="/About" element={<About/>} />
-        </Routes>
+          <Textarea heading="Enter the text to analyze" />
+        {/* <About/> */}
       </div>
-    </Router>
+      </>  
   );
 }
 
