@@ -110,8 +110,8 @@ const handleExtraSpaces = ()=>{
         type="submit"
         onClick={speak}
         className="btn btn-warning mx-2 my-2 "
-      >
-        Speak
+      >Speak
+        
       </button>
 
 
